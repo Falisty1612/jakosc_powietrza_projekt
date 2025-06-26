@@ -1,3 +1,4 @@
 # Pliki z kluczami API
 .env
-docs/API_keys.md
+docs/API_keys.env
+
