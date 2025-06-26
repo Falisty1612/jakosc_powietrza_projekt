@@ -18,7 +18,7 @@ today = datetime.date.today().isoformat()
 OUTPUT_FILE = f"data/raw/airly/{today}.json"
 
 #ładowanie klucza z pliku .env
-load_dotenv()
+load_dotenv(dotenv_path="docs/API_keys.env") #ścieżka do pliku z kluczami API
 AIRLY_API_KEY = os.getenv("AIRLY_API_KEY")
 
 #adres URL do API Airly
