@@ -10,7 +10,7 @@ today = datetime.date.today().isoformat()
 INPUT_FILE = f"data/raw/meteo/{today}.json"
 
 #ścieżka do pliku wyjściowego CSV (do processed)
-OUTPUT_FILE = "data/processed/meteo.csv"
+OUTPUT_FILE = f"data/processed/meteo/meteo_{today}.csv"
 
 
 #wczytywanie danych z pliku JSON
