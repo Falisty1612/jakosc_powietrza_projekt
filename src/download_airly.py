@@ -6,7 +6,7 @@ from dotenv import load_dotenv #do ładowania zmiennych środowiskowych z pliku 
 
 
 
-#Współrzędne geograficzne dla Krakowa
+#współrzędne geograficzne dla Krakowa
 LATITUDE = 50.0614
 LONGITUDE = 19.9366
 
@@ -36,7 +36,7 @@ headers = {
     "apikey": AIRLY_API_KEY
 }
 
-# 🧠 Funkcja pobierająca dane z API Airly
+#funkcja pobierająca dane z API Airly
 def download_airly_data():
     #wysłanie żądania GET do API Airly
     response = requests.get(URL, headers=headers, params=params)
