@@ -41,7 +41,7 @@ for hist in data.get('history', []):
     process_measurement(hist)
 
 #zapis do pliku CSV
-with open('airly_data.csv', 'w', newline='') as csvfile:
+with open(OUTPUT_FILE, 'w', newline='') as csvfile:
     fieldnames = ['fromDateTime', 'tillDateTime', 'parameter', 'value']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
