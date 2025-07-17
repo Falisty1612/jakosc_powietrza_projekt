@@ -3,15 +3,11 @@
 
 ## Tydzień 1 – Pobieranie i eksploracja danych
 
-**🔸 Dzień 1** 
+**🔸 Dzień 1** \/
 - Załóż konto w serwisie [Airly](https://developer.airly.org/)
 - Wygeneruj swój klucz API
 - Przeczytaj dokumentację API Airly i Open-Meteo
 - Zapisz dane dostępowe w pliku `docs/API_keys.md`
-
-**🔸 Dzień 2**
-- Pobierz dane GIOŚ (np. PM2.5, PM10) jako plik `.csv`
-- Zapisz dane do folderu `data/raw/gios.csv`
 
 **🔸 Dzień 3**
 - Utwórz skrypt `download_airly.py`, który pobiera dane z Airly (API, JSON)`
@@ -24,7 +20,7 @@
 
 **🔸 Dzień 5**
 - Otwórz Jupyter Notebook i stwórz `01_exploration.ipynb`
-- Wczytaj dane z 3 źródeł (Airly, GIOŚ, Pogoda)
+- Wczytaj dane z 3 źródeł (Airly, Pogoda)
 - Wykonaj eksplorację: `head()`, `info()`, `describe()`, sprawdź kolumny, typy danych
 
 ---

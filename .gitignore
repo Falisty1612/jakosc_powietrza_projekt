@@ -2,3 +2,5 @@
 .env
 docs/API_keys.env
 
+#pliki z surowymi danymi
+data/raw/
