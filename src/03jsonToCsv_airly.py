@@ -4,14 +4,13 @@ import datetime #do pracy z datami
 import pandas as pd #do pracy z danymi tabelkowymi
 import csv #do pracy z plikami CSV
 
-#impport dzisiejszej daty
-today = datetime.date.today().isoformat()
+data_str = input("Podaj datę w formacie RRRR-MM-DD (np. 2025-07-01): ").strip()
 
 #ścieżka do pliku wejściowego JSON (z raw)
-INPUT_FILE = f"data/raw/airly/{today}.json"
+INPUT_FILE = f"data/raw/airly/{data_str}.json"
 
 #ścieżka do pliku wyjściowego CSV (do processed)
-OUTPUT_FILE = f"data/processed/airly/airly_{today}.csv"
+OUTPUT_FILE = f"data/processed/airly/airly_{data_str}.csv"
 
 #wczytywanie danych z pliku JSON
 with open(INPUT_FILE, "r", encoding="utf-8") as f:

@@ -3,14 +3,13 @@ import os #do pracy z plikami i katalogami
 import datetime #do pracy z datami
 import pandas as pd #do pracy z danymi tabelkowymi
 
-#impport dzisiejszej daty
-today = datetime.date.today().isoformat()
+data_str = input("Podaj datę w formacie RRRR-MM-DD (np. 2025-07-01): ").strip()
 
 #ścieżka do pliku wejściowego JSON (z raw)
-INPUT_FILE = f"data/raw/meteo/{today}.json"
+INPUT_FILE = f"data/raw/meteo/{data_str}.json"
 
 #ścieżka do pliku wyjściowego CSV (do processed)
-OUTPUT_FILE = f"data/processed/meteo/meteo_{today}.csv"
+OUTPUT_FILE = f"data/processed/meteo/meteo_{data_str}.csv"
 
 
 #wczytywanie danych z pliku JSON

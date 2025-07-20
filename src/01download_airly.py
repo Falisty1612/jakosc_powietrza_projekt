@@ -10,12 +10,11 @@ from dotenv import load_dotenv #do ładowania zmiennych środowiskowych z pliku 
 LATITUDE = 50.0614
 LONGITUDE = 19.9366
 
+data_str = input("Podaj datę w formacie RRRR-MM-DD (np. 2025-07-01): ").strip()
 
-#impport dzisiejszej daty
-today = datetime.date.today().isoformat()
 
 #ścieżna do pliku wyjściowego (tam mnie zapiszą się dane)
-OUTPUT_FILE = f"data/raw/airly/{today}.json"
+OUTPUT_FILE = f"data/raw/airly/{data_str}.json"
 
 #ładowanie klucza z pliku .env
 load_dotenv(dotenv_path="docs/API_keys.env") #ścieżka do pliku z kluczami API

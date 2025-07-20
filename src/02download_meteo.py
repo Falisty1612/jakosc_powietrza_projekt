@@ -10,11 +10,10 @@ LATITUDE = 50.0614
 LONGITUDE = 19.9366
 
 
-#impport dzisiejszej daty
-today = datetime.date.today().isoformat()
+data_str = input("Podaj datę w formacie RRRR-MM-DD (np. 2025-07-01): ").strip()
 
 #ścieżna do pliku wyjściowego (tam mnie zapiszą się dane)
-OUTPUT_FILE = f"data/raw/meteo/{today}.json"
+OUTPUT_FILE = f"data/raw/meteo/{data_str}.json"
 
 #adres URL do Meteo
 URL = "https://api.open-meteo.com/v1/forecast"
