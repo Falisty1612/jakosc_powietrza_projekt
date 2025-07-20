@@ -3,7 +3,7 @@
 
 ## Tydzień 1 – Pobieranie i eksploracja danych
 
-**🔸 Dzień 1** \/
+**🔸 Dzień 1** 
 - Załóż konto w serwisie [Airly](https://developer.airly.org/)
 - Wygeneruj swój klucz API
 - Przeczytaj dokumentację API Airly i Open-Meteo
